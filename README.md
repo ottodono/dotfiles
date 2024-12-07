@@ -108,5 +108,12 @@ For java gcc is required
 
 ```
 $ sudo apt install gcc
-````
+```
+
+### SDKman
+
+```
+curl -s "https://get.sdkman.io" | bash
+
+```
 
