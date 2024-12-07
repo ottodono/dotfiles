@@ -42,57 +42,71 @@ $ stow .
 ### Zsh
 
 ```
-apt install zsh
+$ sudo apt install zsh
 ```
 
 ### oh-my-zsh
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 #### zsh-autosuggestions
 ```
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 #### zsh-syntax-highlighting
 ```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ## Tmux
 ```
-apt install tmux
+$ sudo apt install tmux
 ```
 
 Install Tmux Plugin Manager
 ```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 ```
-tmux source ~/.config/tmux/tmux.conf
+$ tmux
+```
+
+```
+$ tmux source ~/.config/tmux/tmux.conf
+```
+
+Install plugins
+
+```
+prefix + I
 ```
 
 ### nvim
+
 ```
-sudo apt install neovim
+$ sudo apt install neovim
+```
+
+#### NVChad
+
+```
+$ git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ```
 
 Install Tree Sitter
+
 ```
 TSInstall java
 TSInstall markdown
 TSInstall yaml
 ```
+
 For java gcc is required
+
 ```
-apt install gcc
+$ sudo apt install gcc
 ````
-
-#### NVChad
-```
- git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-```
-
 
