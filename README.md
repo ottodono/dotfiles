@@ -6,10 +6,22 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
+### Update packages
+
+```
+$ sudo apt update
+```
+
 ### Git
 
 ```
-apt install git
+$ sudo apt install git
+```
+
+### Stow
+
+```
+$ sudo apt install stow
 ```
 
 ## Installation
@@ -17,7 +29,7 @@ apt install git
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/ottodono/dotfiles.git
+$ git clone git@github.com:ottodono/dotfiles.git
 $ cd dotfiles
 ```
 
