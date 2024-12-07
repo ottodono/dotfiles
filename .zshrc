@@ -3,13 +3,12 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:/home/ksudreau/.local/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bureau"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,10 +71,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	zsh-syntax-highlighting
-	zsh-completions
-	zsh-autosuggestions
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,20 +106,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# Aliases
-alias ls='ls --color'
-alias vim='nvim'
-alias c='clear'
 
-# Shell integrations
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/base.toml)"
-
-# Go
-export PATH=$PATH:/usr/local/go/bin
-
-# fnm
-FNM_PATH="/home/ksudreau/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/ksudreau/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
+alias vim=nvim
